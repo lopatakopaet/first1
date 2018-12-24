@@ -1,0 +1,63 @@
+*, html, body{ margin: 0; padding: 0; box-sizing: border-box;}
+.cbalink{display: none;}
+
+h1{font-size: 100px;color:white;}
+.wrap{height: 100vh;
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;padding: 10px;
+}
+.wrap > div > div >div,.wrap>div> div:nth-child(2), .wrap>div:first-child{background: orange}
+.head{
+    justify-content: center;display: flex;
+    align-items: center;
+    height: 32%;width: 100%;
+    margin-bottom: 10px;
+}
+.center{
+    height: 66%;width: 100%;display: flex;
+}
+.left{
+    height:100%;
+    overflow: hidden;
+    width: 64%;display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.inLeft{height: 50%;justify-content: center;display: flex;align-items: center;}
+.inLeft1{width: 100%; margin-bottom: 10px; 
+}
+.inLeft2{width: 49.5%;}
+.inLeft3{width: 49%;}
+.right{flex-grow: 1;margin-left: 10px;justify-content: center;display: flex;align-items: center;}
+
+
+@media screen and (max-width:720px){
+    .head{height: 20%;}
+    .center{flex-wrap:wrap;height: 80%;}
+    .left{width: 100%;height: 50%;}
+    .inLeft{width: 32%;height: 99%;}
+    .right{width: 100%; height: 48%; margin: 0}
+    
+}
+@media screen and (max-width:640px){
+    .wrap{height: 99vh;}
+    .head{height: 33%;}
+    .center{height: 66%;}
+    .left{height: 100%;}
+    .inLeft1, .inLeft2{width: 100%;height: 49%;}
+    .inLeft3, .right{display: none;}
+}
+
+@media screen and (max-width:480px){
+    .wrap{height: 100vh;}
+    .head{height: 24%;}
+    .center{height:76%;}
+    .left{height: 63%;}
+    .inLeft1{height: 50%;}
+    .inLeft2, .inLeft3{height: 50%;width: 48.7%;}
+    .inLeft3, .right{display: flex;}
+    .right{height: 31%;}
+}
+
+
